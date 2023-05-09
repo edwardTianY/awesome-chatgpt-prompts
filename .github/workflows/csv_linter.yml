@@ -3,6 +3,8 @@ name: CSV Linter and Trailing Whitespaces
 on:
   push:
   pull_request:
+  schedule:
+    - cron: "0 18 * * *"
 
 jobs:
   lint_and_check_trailing_whitespaces:
